@@ -234,7 +234,7 @@ export default function Registration({
             />
           </div>
           <div className="w-full flex flex-col mb-2 text-slate-500">
-            <label className="flex">{t("address")}</label>
+            <label className="flex">   {t("address")}: {address ? address : userInfo?.address}</label>
             <input
               type="text"
               className="rounded bg-gray-50 border text-gray-900 focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 text-sm border-gray-300 p-2"
