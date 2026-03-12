@@ -828,7 +828,7 @@ export default function Sidenav({
                               verifiedIcon}
                           </a>
                         )}
-                        {address && (
+                        {userInfo?.address && (
                           <a className="px-4 py-2 text-sm leading-5 text-gray-700 hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:bg-gray-100 focus:text-gray-900 flex w-max">
                             {t("address")}: {address ? address : userInfo?.address}
                             {userInfo?.verified_claims &&
